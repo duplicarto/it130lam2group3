@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+	background-color: #101010;
+}
+
+footer {
+	padding: 30px 10%;
+	background-color: #101010;
+}
+
+header h1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	color: #ECF0F1;
+}
+
+header h2, footer h4 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	color: #ECF0F1;
+	text-align: center;
+}
+
+li {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #ECF0F1;
+}
+
+.navigation {
+	list-style: none;
+}
+
+.navigation li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+.navigation li span {
+  padding-left: 5px;
+}
+
+.navigation li a {
+  font-family: "Montserrat", sans-serif;
+	transition: all 0.3s ease 0s;
+  color: #ECF0F1;
+  text-decoration: none;
+}
+
+.navigation li a:hover {
+	color: #3fe6fc;
+}
+
+body {
+	background-color: #ECF0F1;
+	height: 100%;
+	width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.product-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Hide the images by default */
+.mySlides, .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7{
+  display: none;
+}
+
+.mySlides7{
+  display: none;
+}
+
+/* Center stuff */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centerTable {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  
+}
+
+/* Bottom Stuff */
+.bottom{
+  bottom: 0;
+}
+
+/* Sizing for Products */
+.product{
+  background-color: white;
+  width: 400px;
+  height: auto;
+}
+
+.product1{
+  background-color: white;
+  width: auto;
+  height: 400px;
+}
+
+.product2{
+  background-color: white;
+  width: 400px;
+  height: 400px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(39, 39, 39);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "previous button" to the left */
+.prev {
+  left:0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+td{
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+td.img{
+  height:400px;
+}
+
+h1.product{
+  font-size: 50px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	background-color: #ECF0F1;
+  width: 100%;
+  padding: 15px;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*section*/
+.section {
+  height: 1120px;
+  max-height: 1220px;
+}
+.section a, .section li {
+  color: #101010;
+  text-decoration: none;
+  list-style: none;
+}
+.section a:hover {
+  color: #3fe6fc;
+}
+/*---------------------CONTACTS---------------------------*/
+.container {
+  margin: 5% 15%;
+}
+.content {
+  width: 100%;
+}
+.card {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+.card-row {
+  display: flex;
+  flex-direction: row;
+}
+.card-left {
+  width: 50%;
+}
+.card-right {
+  width: 50%;
+}
+/*---------------------PRODUCTS---------------------------*/
+.prd-btn {
+  border-radius: 20px;
+  background-color: #347aeb;
+  border-style: none;
+  height: 30px;
+  width: 10%;
+}
+.prd-btn:hover {
+  transition: all 0.3s ease-in-out;
+  opacity: 80%;
+}
+.add-cart {
+  text-decoration: none;
+  color: white;
+}
+/*---------------------CART---------------------------*/
+.prd-ctnr {
+  max-width: 950px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+.prd-header {
+  width: 100%;
+  max-width: 950px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgrey;
+  margin: 0 auto;
+}
+.prd-qty, .prd-total {
+  width: 15%;
+  text-align: center;
+}
+.prd-title {
+  width: 45%;
+}
+.prd-title img {
+  width: 25%;
+}
+.prd-price {
+  width: 25%;
+  text-align: center;
+}
+
+.cart-list {
+  width: 100%;
+  justify-content: space-around;
+  padding: 10p 0;
+}
+.cart-list i {
+  font-size: 1rem;
+  color: #347aeb;
+  cursor: pointer;
+}
